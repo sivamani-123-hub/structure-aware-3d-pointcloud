@@ -9,7 +9,6 @@
   [![Python](https://img.shields.io/badge/Python-3.10%20%7C%203.11%20%7C%203.12-3776AB.svg?style=for-the-badge&logo=python&logoColor=white)](https://www.python.org/)
   [![PyTorch](https://img.shields.io/badge/PyTorch-2.0+-EE4C2C.svg?style=for-the-badge&logo=pytorch&logoColor=white)](https://pytorch.org/)
   [![Streamlit](https://img.shields.io/badge/Streamlit-1.30+-FF4B4B.svg?style=for-the-badge&logo=streamlit&logoColor=white)](https://streamlit.io/)
-  [![Research Paper](https://img.shields.io/badge/Monograph-26%20Pages%20PDF-007ACC.svg?style=for-the-badge&logo=arxiv&logoColor=white)](research_paper.pdf)
   [![License: MIT](https://img.shields.io/badge/License-MIT-green.svg?style=for-the-badge)](LICENSE)
   [![Build Status](https://img.shields.io/badge/Test%20Suite-10%2F10%20Passing-success.svg?style=for-the-badge)]()
 
@@ -48,7 +47,6 @@
   - [Launch 3D WebGL Dashboard](#launch-3d-webgl-dashboard)
   - [Evaluate Synthetic-to-Real Transfer](#evaluate-synthetic-to-real-transfer)
   - [Run Target Adaptation Fine-Tuning](#run-target-adaptation-fine-tuning)
-  - [Compile 26-Page Academic Monograph](#compile-26-page-academic-monograph)
 - [6. Project Architecture & Directory Structure](#6-project-architecture--directory-structure)
 - [7. Empirical Performance Benchmarks](#7-empirical-performance-benchmarks)
 - [8. License](#8-license)
@@ -150,13 +148,6 @@ Execute progressive transfer learning on the target ScanObjectNN domain:
 python scripts/finetune_target.py --epochs 20 --lr 0.0001 --batch_size 16
 ```
 
-### Compile 26-Page Academic Monograph
-Compile the complete publication-grade research paper PDF with verified 26 pages, figures, and formal proofs:
-
-```bash
-python scripts/build_exhaustive_paper_23plus.py
-```
-
 ---
 
 ## 6. Project Architecture & Directory Structure
@@ -192,9 +183,6 @@ structure-aware-3d-pointcloud/
 │   ├── finetune_target.py            # Supervised target domain adaptation script
 │   └── test_end_to_end_mvp.py        # 10-point end-to-end verification suite
 ├── visualizations/                   # 30+ High-Resolution Diagnostic Figures & Plots
-├── RESEARCH_PAPER.md                 # Master academic research paper (79 KB)
-├── research_paper.pdf                # Compiled 26-Page Academic Research Monograph
-├── research_paper.docx               # Two-column IEEE/ACM Word Monograph
 ├── requirements.txt                  # Production runtime dependencies
 ├── LICENSE                           # Open-source MIT License
 └── README.md                         # Project documentation

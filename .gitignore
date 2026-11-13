@@ -44,6 +44,14 @@ data_cache/
 *.tar.gz
 *.zip
 
+# Research Paper Documents
+*.pdf
+*.docx
+*.tex
+RESEARCH_PAPER.md
+Paper_Title_.pdf
+extracted_paper_text.txt
+
 # Intermediate Ablation Checkpoints (Core best checkpoints are kept)
 checkpoints/ablation_*/*.pth
 checkpoints/ablation_*/*.pt
