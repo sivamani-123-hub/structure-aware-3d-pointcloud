@@ -52,8 +52,7 @@
 - [6. Project Architecture & Directory Structure](#6-project-architecture--directory-structure)
 - [7. Empirical Performance Benchmarks](#7-empirical-performance-benchmarks)
 - [8. Roadmap](#8-roadmap)
-- [9. Contributing](#9-contributing)
-- [10. Citation & License](#10-citation--license)
+- [9. License](#9-license)
 
 </details>
 
@@ -233,29 +232,6 @@ structure-aware-3d-pointcloud/
 
 ---
 
-## 9. Contributing
+## 9. License
 
-Contributions are welcomed! Follow these standard steps:
-
-1. **Fork the Repository:** Click the `Fork` button at the top right of this page.
-2. **Create a Feature Branch:** `git checkout -b feat/your-feature-name`
-3. **Commit Your Changes:** `git commit -m "feat: add descriptive feature name"`
-4. **Push to the Branch:** `git push origin feat/your-feature-name`
-5. **Open a Pull Request:** Submit your PR against the `main` branch with a summary of changes.
-
----
-
-## 10. Citation & License
-
-```bibtex
-@article{upendra2026structureaware,
-  title={Structure-Aware Domain Generalization and Cross-Domain Adaptation for 3D Point Cloud Classification: A Dynamic Graph Neural Network Framework},
-  author={Upendra, R. and Sivamani, B. J. V. and Sasi, B. and Pavan, K.},
-  journal={IEEE Transactions on Pattern Analysis and Machine Intelligence (TPAMI) / Research Monograph},
-  year={2026},
-  pages={1--26},
-  url={https://github.com/sivamani-123-hub/structure-aware-3d-pointcloud}
-}
-```
-
-Distributed under the **MIT License**. See [`LICENSE`](LICENSE) for complete details.
+This project is licensed under the **MIT License** — see the [`LICENSE`](LICENSE) file for complete details.
