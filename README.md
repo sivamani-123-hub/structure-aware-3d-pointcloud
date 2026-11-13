@@ -176,9 +176,7 @@ structure-aware-3d-pointcloud/
 │   └── pointnet.py                   # Canonical PointNet baseline architecture
 ├── reports/                          # Audit & Benchmarking Evaluation Deliverables
 │   └── phase7/                       # Detailed per-class JSON metrics and confusion logs
-├── scripts/                          # Automated Verification & Monograph Compilers
-│   ├── build_exhaustive_paper_23plus.py # 26-page academic monograph PDF generator
-│   ├── build_exhaustive_docx.py      # Full IEEE/ACM two-column Word generator
+├── scripts/                          # Automated Verification & Evaluation Scripts
 │   ├── evaluate_zero_shot.py         # Zero-shot cross-domain evaluation suite
 │   ├── finetune_target.py            # Supervised target domain adaptation script
 │   └── test_end_to_end_mvp.py        # 10-point end-to-end verification suite
