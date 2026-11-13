@@ -51,8 +51,7 @@
   - [Compile 26-Page Academic Monograph](#compile-26-page-academic-monograph)
 - [6. Project Architecture & Directory Structure](#6-project-architecture--directory-structure)
 - [7. Empirical Performance Benchmarks](#7-empirical-performance-benchmarks)
-- [8. Roadmap](#8-roadmap)
-- [9. License](#9-license)
+- [8. License](#8-license)
 
 </details>
 
@@ -217,21 +216,6 @@ structure-aware-3d-pointcloud/
 
 ---
 
-## 8. Roadmap
-
-- [x] Baseline PointNet and DGCNN implementation in PyTorch.
-- [x] 5-Dimensional ablation suite ($k \in [10, 40]$, resolution, scheduler, regularization).
-- [x] Cross-domain synthetic-to-real evaluation on ScanObjectNN physical scans.
-- [x] Mathematical proof of Theorem 3 (Topological Invariance under Back-Surface Occlusion).
-- [x] Supervised target adaptation recovering planar categories (+52.33% gain).
-- [x] 12,000-particle WebGL surface manifold densification engine via spatial k-d trees.
-- [x] 26-page academic research monograph compilation ([research_paper.pdf](research_paper.pdf)).
-- [ ] Integration of Self-Supervised 3D Masked Graph Autoencoders (Graph-MAE).
-- [ ] Continuous Neural Ordinary Differential Equations (ODEs) on Riemannian point manifolds.
-- [ ] Export to ONNX and TensorRT for embedded edge deployment on Jetson Orin.
-
----
-
-## 9. License
+## 8. License
 
 This project is licensed under the **MIT License** — see the [`LICENSE`](LICENSE) file for complete details.
