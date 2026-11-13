@@ -48,7 +48,11 @@
   - [Evaluate Synthetic-to-Real Transfer](#evaluate-synthetic-to-real-transfer)
   - [Run Target Adaptation Fine-Tuning](#run-target-adaptation-fine-tuning)
 - [6. Project Architecture & Directory Structure](#6-project-architecture--directory-structure)
-- [7. Empirical Performance Benchmarks](#7-empirical-performance-benchmarks)
+- [7. Empirical Performance Benchmarks & Diagnostic Graphs](#7-empirical-performance-benchmarks--diagnostic-graphs)
+  - [In-Domain ModelNet40 Convergence & Per-Class Accuracy](#in-domain-modelnet40-convergence--per-class-accuracy)
+  - [5D Systematic Ablation Trajectories](#5d-systematic-ablation-trajectories)
+  - [Synthetic-to-Real Transfer & The Chair Anomaly](#synthetic-to-real-transfer--the-chair-anomaly)
+  - [Target Domain Adaptation & Confusion Matrix](#target-domain-adaptation--confusion-matrix)
 - [8. License](#8-license)
 
 </details>
@@ -188,7 +192,7 @@ structure-aware-3d-pointcloud/
 
 ---
 
-## 7. Empirical Performance Benchmarks
+## 7. Empirical Performance Benchmarks & Diagnostic Graphs
 
 | Metric / Dimension | PointNet Baseline | DGCNN Baseline ($k=20$) | Peak GNN (Tuned) | Adapted GNN (Transfer) | Net Impact |
 | :--- | :---: | :---: | :---: | :---: | :---: |
@@ -199,6 +203,53 @@ structure-aware-3d-pointcloud/
 | **Guitar In-Domain Acc** | 40.00% | 75.00% | **85.00%** | — | **+35.00%** Gain |
 | **Inference Latency (RTX 4050)** | **4.08 ms** | 13.88 ms | 13.88 ms | 13.42 ms | **72.0 FPS** Real-Time |
 | **12k Densification Time** | — | — | — | **~13.4 ms** | **31.3 FPS** WebGL Native |
+
+---
+
+### In-Domain ModelNet40 Convergence & Per-Class Accuracy
+
+<p align="center">
+  <img src="figures/fig5_dgcnn_convergence.png" width="48%" alt="ModelNet40 Convergence Dynamics" />
+  <img src="visualizations/pointnet_vs_gnn_comparison.png" width="48%" alt="Per-Class Accuracy Comparison" />
+</p>
+<p align="center"><em>Left: Training and validation convergence trajectories across 80 epochs on ModelNet40. Right: Per-class accuracy comparison highlighting substantial GNN improvements on articulated categories (guitar +35.0%, nightstand +30.2%, tent +30.0%, sofa +23.0%).</em></p>
+
+---
+
+### 5D Systematic Ablation Trajectories
+
+<p align="center">
+  <img src="visualizations/k_ablation_curves.png" width="48%" alt="Neighborhood Size k Ablation" />
+  <img src="visualizations/regularization_ablation_curves.png" width="48%" alt="Regularization & Dropout Ablation" />
+</p>
+<p align="center">
+  <img src="visualizations/lr_ablation_curves.png" width="48%" alt="Learning Rate Schedule Ablation" />
+  <img src="visualizations/point_count_ablation_curves.png" width="48%" alt="Point Count Resolution Ablation" />
+</p>
+<p align="center"><em>Systematic empirical trajectories across 5 dimensions: (Top-Left) Neighborhood size $k \in \{10, 20, 30, 40\}$ demonstrating the $k=20$ Pareto optimum; (Top-Right) Dropout and weight decay regularization; (Bottom-Left) Learning rate scheduler dynamics (Cosine Annealing vs Step); (Bottom-Right) Point resolution sensitivity ($N \in \{512, 1024, 2048\}$).</em></p>
+
+---
+
+### Synthetic-to-Real Transfer & The Chair Anomaly
+
+<p align="center">
+  <img src="visualizations/phase7/zero_shot_model_comparison.png" width="48%" alt="Zero-Shot Model Comparison" />
+  <img src="visualizations/phase7/zero_shot_per_class_comparison.png" width="48%" alt="Zero-Shot Per-Class Accuracy" />
+</p>
+<p align="center"><em>Left: Overall zero-shot transfer comparison on 386 untouched physical LiDAR scans. Right: Per-class breakdown highlighting the 83.33% Chair Topological Anomaly, where EdgeConv relative displacement vectors remain invariant under single-view line-of-sight back-surface occlusion.</em></p>
+
+---
+
+### Target Domain Adaptation & Confusion Matrix
+
+<p align="center">
+  <img src="visualizations/phase7/finetuning_curves.png" width="48%" alt="Target Adaptation Convergence" />
+  <img src="visualizations/phase7/zeroshot_vs_finetuned_comparison.png" width="48%" alt="Zero-Shot vs Fine-Tuned Comparison" />
+</p>
+<p align="center">
+  <img src="visualizations/phase7/finetuned_gnn_confusion_matrix.png" width="65%" alt="10x10 Target Confusion Matrix Heatmap" />
+</p>
+<p align="center"><em>Top-Left: Progressive fine-tuning convergence on physical scans across 20 epochs. Top-Right: Per-class recovery post-adaptation (+52.33% net gain, recovering table, desk, and cabinet). Bottom: Complete 10x10 empirical target confusion matrix heatmap on physical ScanObjectNN test scans.</em></p>
 
 ---
 
