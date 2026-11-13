@@ -1,0 +1,453 @@
+{
+  "dataset_root": "c:\\DLproj\\dataset\\ModelNet40",
+  "total_canonical_classes": 40,
+  "all_40_class_names": [
+    "airplane",
+    "bathtub",
+    "bed",
+    "bench",
+    "bookshelf",
+    "bottle",
+    "bowl",
+    "car",
+    "chair",
+    "cone",
+    "cup",
+    "curtain",
+    "desk",
+    "door",
+    "dresser",
+    "flower_pot",
+    "glass_box",
+    "guitar",
+    "keyboard",
+    "lamp",
+    "laptop",
+    "mantel",
+    "monitor",
+    "night_stand",
+    "person",
+    "piano",
+    "plant",
+    "radio",
+    "range_hood",
+    "sink",
+    "sofa",
+    "stairs",
+    "stool",
+    "table",
+    "tent",
+    "toilet",
+    "tv_stand",
+    "vase",
+    "wardrobe",
+    "xbox"
+  ],
+  "extracted_class_dirs_count": 30,
+  "extracted_class_dirs": [
+    "airplane",
+    "bathtub",
+    "bed",
+    "bench",
+    "bookshelf",
+    "car",
+    "chair",
+    "curtain",
+    "desk",
+    "door",
+    "dresser",
+    "guitar",
+    "laptop",
+    "mantel",
+    "monitor",
+    "night_stand",
+    "person",
+    "piano",
+    "plant",
+    "range_hood",
+    "sofa",
+    "stairs",
+    "stool",
+    "table",
+    "tent",
+    "toilet",
+    "tv_stand",
+    "vase",
+    "wardrobe",
+    "xbox"
+  ],
+  "missing_class_dirs": [
+    "bottle",
+    "bowl",
+    "cone",
+    "cup",
+    "flower_pot",
+    "glass_box",
+    "keyboard",
+    "lamp",
+    "radio",
+    "sink"
+  ],
+  "mac_os_resource_fork_files_count": 40,
+  "total_samples": 10485,
+  "train_samples": 8377,
+  "test_samples": 2108,
+  "file_formats": [
+    ".off"
+  ],
+  "vertex_statistics": {
+    "min": 14,
+    "max": 2501688,
+    "mean": 19174.00267048164,
+    "median": 3860.0,
+    "std": 62722.44615373089
+  },
+  "face_statistics": {
+    "min": 4,
+    "max": 4548836,
+    "mean": 18803.926943252267,
+    "median": 3806.0,
+    "std": 71130.80430867523
+  },
+  "duplicate_analysis": {
+    "train_internal_duplicates": 33,
+    "test_internal_duplicates": 4,
+    "train_test_data_leakage_count": 18,
+    "leakage_sample_pairs": [
+      {
+        "file1": "c:\\DLproj\\dataset\\ModelNet40\\night_stand\\train\\night_stand_0193.off",
+        "file2": "c:\\DLproj\\dataset\\ModelNet40\\dresser\\test\\dresser_0231.off"
+      },
+      {
+        "file1": "c:\\DLproj\\dataset\\ModelNet40\\night_stand\\train\\night_stand_0174.off",
+        "file2": "c:\\DLproj\\dataset\\ModelNet40\\dresser\\test\\dresser_0272.off"
+      },
+      {
+        "file1": "c:\\DLproj\\dataset\\ModelNet40\\guitar\\train\\guitar_0068.off",
+        "file2": "c:\\DLproj\\dataset\\ModelNet40\\guitar\\test\\guitar_0217.off"
+      },
+      {
+        "file1": "c:\\DLproj\\dataset\\ModelNet40\\dresser\\train\\dresser_0025.off",
+        "file2": "c:\\DLproj\\dataset\\ModelNet40\\night_stand\\test\\night_stand_0223.off"
+      },
+      {
+        "file1": "c:\\DLproj\\dataset\\ModelNet40\\dresser\\train\\dresser_0024.off",
+        "file2": "c:\\DLproj\\dataset\\ModelNet40\\night_stand\\test\\night_stand_0257.off"
+      },
+      {
+        "file1": "c:\\DLproj\\dataset\\ModelNet40\\piano\\train\\piano_0143.off",
+        "file2": "c:\\DLproj\\dataset\\ModelNet40\\piano\\test\\piano_0260.off"
+      },
+      {
+        "file1": "c:\\DLproj\\dataset\\ModelNet40\\piano\\train\\piano_0085.off",
+        "file2": "c:\\DLproj\\dataset\\ModelNet40\\piano\\test\\piano_0281.off"
+      },
+      {
+        "file1": "c:\\DLproj\\dataset\\ModelNet40\\piano\\train\\piano_0152.off",
+        "file2": "c:\\DLproj\\dataset\\ModelNet40\\piano\\test\\piano_0300.off"
+      },
+      {
+        "file1": "c:\\DLproj\\dataset\\ModelNet40\\piano\\train\\piano_0045.off",
+        "file2": "c:\\DLproj\\dataset\\ModelNet40\\piano\\test\\piano_0312.off"
+      },
+      {
+        "file1": "c:\\DLproj\\dataset\\ModelNet40\\piano\\train\\piano_0039.off",
+        "file2": "c:\\DLproj\\dataset\\ModelNet40\\piano\\test\\piano_0314.off"
+      }
+    ]
+  },
+  "example_objects": {
+    "airplane": {
+      "class": "airplane",
+      "filepath": "c:\\DLproj\\dataset\\ModelNet40\\airplane\\train\\airplane_0001.off",
+      "split": "train",
+      "num_vertices": 90714,
+      "num_faces": 104773,
+      "raw_bbox_min": [
+        -143.0970001220703,
+        -242.24600219726562,
+        0.421315997838974
+      ],
+      "raw_bbox_max": [
+        214.8560028076172,
+        47.39390182495117,
+        116.5510025024414
+      ],
+      "raw_dimensions": [
+        357.9530029296875,
+        289.639892578125,
+        116.12968444824219
+      ],
+      "raw_centroid": [
+        36.464908599853516,
+        -39.10163879394531,
+        74.7552490234375
+      ],
+      "scale_radius": 210.29470825195312
+    },
+    "chair": {
+      "class": "chair",
+      "filepath": "c:\\DLproj\\dataset\\ModelNet40\\chair\\train\\chair_0001.off",
+      "split": "train",
+      "num_vertices": 2382,
+      "num_faces": 2234,
+      "raw_bbox_min": [
+        113.27200317382812,
+        96.80349731445312,
+        -0.2329230010509491
+      ],
+      "raw_bbox_max": [
+        133.67100524902344,
+        120.08399963378906,
+        36.489898681640625
+      ],
+      "raw_dimensions": [
+        20.399002075195312,
+        23.280502319335938,
+        36.72282028198242
+      ],
+      "raw_centroid": [
+        123.3197250366211,
+        110.30887603759766,
+        17.199857711791992
+      ],
+      "scale_radius": 22.662662506103516
+    },
+    "bed": {
+      "class": "bed",
+      "filepath": "c:\\DLproj\\dataset\\ModelNet40\\bed\\train\\bed_0001.off",
+      "split": "train",
+      "num_vertices": 2095,
+      "num_faces": 1807,
+      "raw_bbox_min": [
+        142.6300048828125,
+        -87.61930084228516,
+        0.0
+      ],
+      "raw_bbox_max": [
+        206.1300048828125,
+        -2.5642900466918945,
+        42.0
+      ],
+      "raw_dimensions": [
+        63.5,
+        85.05500793457031,
+        42.0
+      ],
+      "raw_centroid": [
+        174.3689727783203,
+        -47.8386116027832,
+        16.279043197631836
+      ],
+      "scale_radius": 60.58174514770508
+    },
+    "car": {
+      "class": "car",
+      "filepath": "c:\\DLproj\\dataset\\ModelNet40\\car\\train\\car_0001.off",
+      "split": "train",
+      "num_vertices": 151185,
+      "num_faces": 121558,
+      "raw_bbox_min": [
+        66.44819641113281,
+        13.150199890136719,
+        -22.173900604248047
+      ],
+      "raw_bbox_max": [
+        392.71600341796875,
+        773.2540283203125,
+        243.4550018310547
+      ],
+      "raw_dimensions": [
+        326.267822265625,
+        760.1038208007812,
+        265.62890625
+      ],
+      "raw_centroid": [
+        231.77304077148438,
+        491.0196533203125,
+        149.4217987060547
+      ],
+      "scale_radius": 492.3200378417969
+    },
+    "guitar": {
+      "class": "guitar",
+      "filepath": "c:\\DLproj\\dataset\\ModelNet40\\guitar\\train\\guitar_0001.off",
+      "split": "train",
+      "num_vertices": 8654,
+      "num_faces": 11325,
+      "raw_bbox_min": [
+        86.22540283203125,
+        18.992300033569336,
+        0.9250199794769287
+      ],
+      "raw_bbox_max": [
+        124.05899810791016,
+        117.02899932861328,
+        13.448800086975098
+      ],
+      "raw_dimensions": [
+        37.833595275878906,
+        98.03669738769531,
+        12.52377986907959
+      ],
+      "raw_centroid": [
+        105.6104965209961,
+        64.28994750976562,
+        9.559307098388672
+      ],
+      "scale_radius": 52.745670318603516
+    }
+  },
+  "class_breakdown": {
+    "airplane": {
+      "train": 626,
+      "test": 100,
+      "total": 726
+    },
+    "bathtub": {
+      "train": 106,
+      "test": 50,
+      "total": 156
+    },
+    "bed": {
+      "train": 515,
+      "test": 100,
+      "total": 615
+    },
+    "bench": {
+      "train": 173,
+      "test": 20,
+      "total": 193
+    },
+    "bookshelf": {
+      "train": 572,
+      "test": 100,
+      "total": 672
+    },
+    "car": {
+      "train": 197,
+      "test": 100,
+      "total": 297
+    },
+    "chair": {
+      "train": 889,
+      "test": 100,
+      "total": 989
+    },
+    "curtain": {
+      "train": 138,
+      "test": 20,
+      "total": 158
+    },
+    "desk": {
+      "train": 200,
+      "test": 86,
+      "total": 286
+    },
+    "door": {
+      "train": 109,
+      "test": 20,
+      "total": 129
+    },
+    "dresser": {
+      "train": 200,
+      "test": 86,
+      "total": 286
+    },
+    "guitar": {
+      "train": 155,
+      "test": 100,
+      "total": 255
+    },
+    "laptop": {
+      "train": 149,
+      "test": 20,
+      "total": 169
+    },
+    "mantel": {
+      "train": 284,
+      "test": 100,
+      "total": 384
+    },
+    "monitor": {
+      "train": 465,
+      "test": 100,
+      "total": 565
+    },
+    "night_stand": {
+      "train": 200,
+      "test": 86,
+      "total": 286
+    },
+    "person": {
+      "train": 88,
+      "test": 20,
+      "total": 108
+    },
+    "piano": {
+      "train": 231,
+      "test": 100,
+      "total": 331
+    },
+    "plant": {
+      "train": 240,
+      "test": 100,
+      "total": 340
+    },
+    "range_hood": {
+      "train": 115,
+      "test": 100,
+      "total": 215
+    },
+    "sofa": {
+      "train": 680,
+      "test": 100,
+      "total": 780
+    },
+    "stairs": {
+      "train": 124,
+      "test": 20,
+      "total": 144
+    },
+    "stool": {
+      "train": 90,
+      "test": 20,
+      "total": 110
+    },
+    "table": {
+      "train": 392,
+      "test": 100,
+      "total": 492
+    },
+    "tent": {
+      "train": 163,
+      "test": 20,
+      "total": 183
+    },
+    "toilet": {
+      "train": 344,
+      "test": 100,
+      "total": 444
+    },
+    "tv_stand": {
+      "train": 267,
+      "test": 100,
+      "total": 367
+    },
+    "vase": {
+      "train": 475,
+      "test": 100,
+      "total": 575
+    },
+    "wardrobe": {
+      "train": 87,
+      "test": 20,
+      "total": 107
+    },
+    "xbox": {
+      "train": 103,
+      "test": 20,
+      "total": 123
+    }
+  }
+}

@@ -1,0 +1,216 @@
+{
+  "total_files_audited": 10485,
+  "exact_duplicates": {
+    "train_internal": 33,
+    "test_internal": 4,
+    "cross_split_leakage_total": 18,
+    "same_class_leakage": 12,
+    "cross_class_leakage": 6,
+    "cross_split_pairs": [
+      {
+        "train_file": "c:\\DLproj\\dataset\\ModelNet40\\guitar\\train\\guitar_0068.off",
+        "test_file": "c:\\DLproj\\dataset\\ModelNet40\\guitar\\test\\guitar_0217.off",
+        "train_class": "guitar",
+        "test_class": "guitar"
+      },
+      {
+        "train_file": "c:\\DLproj\\dataset\\ModelNet40\\night_stand\\train\\night_stand_0174.off",
+        "test_file": "c:\\DLproj\\dataset\\ModelNet40\\dresser\\test\\dresser_0272.off",
+        "train_class": "night_stand",
+        "test_class": "dresser"
+      },
+      {
+        "train_file": "c:\\DLproj\\dataset\\ModelNet40\\night_stand\\train\\night_stand_0193.off",
+        "test_file": "c:\\DLproj\\dataset\\ModelNet40\\dresser\\test\\dresser_0231.off",
+        "train_class": "night_stand",
+        "test_class": "dresser"
+      },
+      {
+        "train_file": "c:\\DLproj\\dataset\\ModelNet40\\dresser\\train\\dresser_0025.off",
+        "test_file": "c:\\DLproj\\dataset\\ModelNet40\\night_stand\\test\\night_stand_0223.off",
+        "train_class": "dresser",
+        "test_class": "night_stand"
+      },
+      {
+        "train_file": "c:\\DLproj\\dataset\\ModelNet40\\dresser\\train\\dresser_0024.off",
+        "test_file": "c:\\DLproj\\dataset\\ModelNet40\\night_stand\\test\\night_stand_0257.off",
+        "train_class": "dresser",
+        "test_class": "night_stand"
+      },
+      {
+        "train_file": "c:\\DLproj\\dataset\\ModelNet40\\piano\\train\\piano_0143.off",
+        "test_file": "c:\\DLproj\\dataset\\ModelNet40\\piano\\test\\piano_0260.off",
+        "train_class": "piano",
+        "test_class": "piano"
+      },
+      {
+        "train_file": "c:\\DLproj\\dataset\\ModelNet40\\piano\\train\\piano_0085.off",
+        "test_file": "c:\\DLproj\\dataset\\ModelNet40\\piano\\test\\piano_0281.off",
+        "train_class": "piano",
+        "test_class": "piano"
+      },
+      {
+        "train_file": "c:\\DLproj\\dataset\\ModelNet40\\piano\\train\\piano_0152.off",
+        "test_file": "c:\\DLproj\\dataset\\ModelNet40\\piano\\test\\piano_0300.off",
+        "train_class": "piano",
+        "test_class": "piano"
+      },
+      {
+        "train_file": "c:\\DLproj\\dataset\\ModelNet40\\piano\\train\\piano_0045.off",
+        "test_file": "c:\\DLproj\\dataset\\ModelNet40\\piano\\test\\piano_0312.off",
+        "train_class": "piano",
+        "test_class": "piano"
+      },
+      {
+        "train_file": "c:\\DLproj\\dataset\\ModelNet40\\piano\\train\\piano_0039.off",
+        "test_file": "c:\\DLproj\\dataset\\ModelNet40\\piano\\test\\piano_0314.off",
+        "train_class": "piano",
+        "test_class": "piano"
+      },
+      {
+        "train_file": "c:\\DLproj\\dataset\\ModelNet40\\plant\\train\\plant_0229.off",
+        "test_file": "c:\\DLproj\\dataset\\ModelNet40\\plant\\test\\plant_0271.off",
+        "train_class": "plant",
+        "test_class": "plant"
+      },
+      {
+        "train_file": "c:\\DLproj\\dataset\\ModelNet40\\plant\\train\\plant_0020.off",
+        "test_file": "c:\\DLproj\\dataset\\ModelNet40\\plant\\test\\plant_0293.off",
+        "train_class": "plant",
+        "test_class": "plant"
+      },
+      {
+        "train_file": "c:\\DLproj\\dataset\\ModelNet40\\plant\\train\\plant_0156.off",
+        "test_file": "c:\\DLproj\\dataset\\ModelNet40\\plant\\test\\plant_0329.off",
+        "train_class": "plant",
+        "test_class": "plant"
+      },
+      {
+        "train_file": "c:\\DLproj\\dataset\\ModelNet40\\plant\\train\\plant_0177.off",
+        "test_file": "c:\\DLproj\\dataset\\ModelNet40\\plant\\test\\plant_0336.off",
+        "train_class": "plant",
+        "test_class": "plant"
+      },
+      {
+        "train_file": "c:\\DLproj\\dataset\\ModelNet40\\mantel\\train\\mantel_0090.off",
+        "test_file": "c:\\DLproj\\dataset\\ModelNet40\\range_hood\\test\\range_hood_0139.off",
+        "train_class": "mantel",
+        "test_class": "range_hood"
+      },
+      {
+        "train_file": "c:\\DLproj\\dataset\\ModelNet40\\mantel\\train\\mantel_0092.off",
+        "test_file": "c:\\DLproj\\dataset\\ModelNet40\\range_hood\\test\\range_hood_0140.off",
+        "train_class": "mantel",
+        "test_class": "range_hood"
+      },
+      {
+        "train_file": "c:\\DLproj\\dataset\\ModelNet40\\tv_stand\\train\\tv_stand_0153.off",
+        "test_file": "c:\\DLproj\\dataset\\ModelNet40\\tv_stand\\test\\tv_stand_0305.off",
+        "train_class": "tv_stand",
+        "test_class": "tv_stand"
+      },
+      {
+        "train_file": "c:\\DLproj\\dataset\\ModelNet40\\tv_stand\\train\\tv_stand_0131.off",
+        "test_file": "c:\\DLproj\\dataset\\ModelNet40\\tv_stand\\test\\tv_stand_0353.off",
+        "train_class": "tv_stand",
+        "test_class": "tv_stand"
+      }
+    ]
+  },
+  "geometric_fingerprint_duplicates": {
+    "cross_split_suspicious_count": 105,
+    "internal_suspicious_count": 252,
+    "samples": [
+      {
+        "file1": "c:\\DLproj\\dataset\\ModelNet40\\airplane\\train\\airplane_0222.off",
+        "file2": "c:\\DLproj\\dataset\\ModelNet40\\airplane\\test\\airplane_0653.off",
+        "cls1": "airplane",
+        "cls2": "airplane",
+        "split1": "train",
+        "split2": "test",
+        "fp": "0.001_0.008_0.092_0.259_0.182_3000"
+      },
+      {
+        "file1": "c:\\DLproj\\dataset\\ModelNet40\\airplane\\train\\airplane_0065.off",
+        "file2": "c:\\DLproj\\dataset\\ModelNet40\\airplane\\test\\airplane_0661.off",
+        "cls1": "airplane",
+        "cls2": "airplane",
+        "split1": "train",
+        "split2": "test",
+        "fp": "0.002_0.005_0.082_0.248_0.168_3000"
+      },
+      {
+        "file1": "c:\\DLproj\\dataset\\ModelNet40\\airplane\\train\\airplane_0107.off",
+        "file2": "c:\\DLproj\\dataset\\ModelNet40\\airplane\\test\\airplane_0702.off",
+        "cls1": "airplane",
+        "cls2": "airplane",
+        "split1": "train",
+        "split2": "test",
+        "fp": "0.002_0.005_0.026_0.147_0.108_3000"
+      },
+      {
+        "file1": "c:\\DLproj\\dataset\\ModelNet40\\airplane\\train\\airplane_0107.off",
+        "file2": "c:\\DLproj\\dataset\\ModelNet40\\airplane\\test\\airplane_0705.off",
+        "cls1": "airplane",
+        "cls2": "airplane",
+        "split1": "train",
+        "split2": "test",
+        "fp": "0.002_0.005_0.026_0.147_0.108_3000"
+      },
+      {
+        "file1": "c:\\DLproj\\dataset\\ModelNet40\\airplane\\train\\airplane_0564.off",
+        "file2": "c:\\DLproj\\dataset\\ModelNet40\\airplane\\test\\airplane_0712.off",
+        "cls1": "airplane",
+        "cls2": "airplane",
+        "split1": "train",
+        "split2": "test",
+        "fp": "0.002_0.007_0.154_0.326_0.238_3000"
+      },
+      {
+        "file1": "c:\\DLproj\\dataset\\ModelNet40\\airplane\\train\\airplane_0462.off",
+        "file2": "c:\\DLproj\\dataset\\ModelNet40\\airplane\\test\\airplane_0721.off",
+        "cls1": "airplane",
+        "cls2": "airplane",
+        "split1": "train",
+        "split2": "test",
+        "fp": "0.001_0.002_0.139_0.323_0.193_3000"
+      },
+      {
+        "file1": "c:\\DLproj\\dataset\\ModelNet40\\airplane\\train\\airplane_0065.off",
+        "file2": "c:\\DLproj\\dataset\\ModelNet40\\airplane\\test\\airplane_0723.off",
+        "cls1": "airplane",
+        "cls2": "airplane",
+        "split1": "train",
+        "split2": "test",
+        "fp": "0.002_0.005_0.082_0.248_0.168_3000"
+      },
+      {
+        "file1": "c:\\DLproj\\dataset\\ModelNet40\\bed\\train\\bed_0417.off",
+        "file2": "c:\\DLproj\\dataset\\ModelNet40\\bed\\test\\bed_0596.off",
+        "cls1": "bed",
+        "cls2": "bed",
+        "split1": "train",
+        "split2": "test",
+        "fp": "0.008_0.117_0.283_0.604_0.209_2822"
+      },
+      {
+        "file1": "c:\\DLproj\\dataset\\ModelNet40\\bed\\train\\bed_0044.off",
+        "file2": "c:\\DLproj\\dataset\\ModelNet40\\bed\\test\\bed_0613.off",
+        "cls1": "bed",
+        "cls2": "bed",
+        "split1": "train",
+        "split2": "test",
+        "fp": "0.015_0.131_0.203_0.544_0.229_383"
+      },
+      {
+        "file1": "c:\\DLproj\\dataset\\ModelNet40\\bookshelf\\train\\bookshelf_0310.off",
+        "file2": "c:\\DLproj\\dataset\\ModelNet40\\bookshelf\\test\\bookshelf_0579.off",
+        "cls1": "bookshelf",
+        "cls2": "bookshelf",
+        "split1": "train",
+        "split2": "test",
+        "fp": "0.057_0.270_0.357_0.817_0.120_272"
+      }
+    ]
+  }
+}

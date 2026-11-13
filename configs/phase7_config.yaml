@@ -1,0 +1,66 @@
+# Phase 7: Cross-Domain Synthetic-to-Real Classification Configuration
+
+project:
+  name: "Structure-Aware Cross-Domain 3D Point Cloud Classification"
+  version: "1.0.0"
+  device: "auto" # 'auto', 'cuda', or 'cpu'
+
+paths:
+  workspace_root: "c:\\DLproj"
+  modelnet40_dir: "c:\\DLproj\\dataset\\ModelNet40"
+  scanobjectnn_dir: "c:\\DLproj\\datasets\\real_world\\ScanObjectNN"
+  checkpoints_dir: "c:\\DLproj\\checkpoints"
+  phase7_checkpoints_dir: "c:\\DLproj\\checkpoints\\phase7"
+  results_dir: "c:\\DLproj\\results\\phase7"
+  visualizations_dir: "c:\\DLproj\\visualizations\\phase7"
+  reports_dir: "c:\\DLproj\\reports\\phase7"
+
+models:
+  pointnet:
+    checkpoint: "c:\\DLproj\\checkpoints\\pointnet_best.pth"
+    num_classes: 40
+    use_tnet: false
+    dropout: 0.3
+  dgcnn:
+    checkpoint: "c:\\DLproj\\checkpoints\\dgcnn_best.pth"
+    num_classes: 40
+    k: 20
+    dropout: 0.5
+  gnn:
+    checkpoint: "c:\\DLproj\\checkpoints\\gnn_best.pth"
+    num_classes: 40
+    k: 20
+    dropout: 0.5
+  peak_regularized_dgcnn:
+    checkpoint: "c:\\DLproj\\checkpoints\\ablation_reg\\dgcnn_drop03_wd0001_best.pth"
+    num_classes: 40
+    k: 40
+    dropout: 0.3
+
+dataset_scanobjectnn:
+  variant: "main_split_nobg" # 'main_split_nobg' (clean) or 'main_split' (background)
+  num_points: 1024
+  batch_size: 32
+  seed: 42
+  common_classes_count: 10
+
+evaluation:
+  modes:
+    - "constrained"   # Evaluates over 10 common classes via mathematical sub-softmax
+    - "unconstrained" # Full open-world argmax across all 40 ModelNet40 classes
+  metrics:
+    - "overall_accuracy"
+    - "mean_class_accuracy"
+    - "macro_precision"
+    - "macro_recall"
+    - "macro_f1"
+    - "weighted_f1"
+
+finetuning:
+  initial_lr: 0.0001
+  min_lr: 0.000001
+  weight_decay: 0.0001
+  num_epochs: 20
+  batch_size: 16
+  patience: 5
+

@@ -1,0 +1,518 @@
+{
+  "model": "PointNet Baseline (Shared MLP + Global MaxPool)",
+  "evaluation_split": "ModelNet40 Official Test Set (Untouched)",
+  "loaded_checkpoint": {
+    "path": "c:\\DLproj\\checkpoints\\pointnet_best.pth",
+    "best_validation_epoch": 8,
+    "best_validation_oa": 0.6033452807646356
+  },
+  "overall_summary": {
+    "total_test_samples": 2108,
+    "correctly_classified": 1178,
+    "incorrectly_classified": 930,
+    "overall_accuracy": 0.5588235294117647,
+    "macro_precision": 0.5752646744349744,
+    "macro_recall": 0.5483643410852713,
+    "macro_f1_score": 0.5322978536089468,
+    "macro_accuracy": 0.5483643410852713,
+    "weighted_precision": 0.6083159297125287,
+    "weighted_recall": 0.5588235294117647,
+    "weighted_f1_score": 0.5458542968242431
+  },
+  "top_5_classes": [
+    {
+      "class_id": 0,
+      "class_name": "airplane",
+      "support": 100,
+      "correct": 92,
+      "incorrect": 8,
+      "accuracy": 0.92,
+      "precision": 0.33093525179856115,
+      "recall": 0.92,
+      "f1_score": 0.4867724867724868
+    },
+    {
+      "class_id": 20,
+      "class_name": "laptop",
+      "support": 20,
+      "correct": 17,
+      "incorrect": 3,
+      "accuracy": 0.85,
+      "precision": 0.5862068965517241,
+      "recall": 0.85,
+      "f1_score": 0.6938775510204082
+    },
+    {
+      "class_id": 22,
+      "class_name": "monitor",
+      "support": 100,
+      "correct": 85,
+      "incorrect": 15,
+      "accuracy": 0.85,
+      "precision": 0.8173076923076923,
+      "recall": 0.85,
+      "f1_score": 0.8333333333333334
+    },
+    {
+      "class_id": 11,
+      "class_name": "curtain",
+      "support": 20,
+      "correct": 16,
+      "incorrect": 4,
+      "accuracy": 0.8,
+      "precision": 0.5333333333333333,
+      "recall": 0.8,
+      "f1_score": 0.64
+    },
+    {
+      "class_id": 13,
+      "class_name": "door",
+      "support": 20,
+      "correct": 16,
+      "incorrect": 4,
+      "accuracy": 0.8,
+      "precision": 0.7619047619047619,
+      "recall": 0.8,
+      "f1_score": 0.7804878048780488
+    }
+  ],
+  "bottom_5_classes": [
+    {
+      "class_id": 31,
+      "class_name": "stairs",
+      "support": 20,
+      "correct": 6,
+      "incorrect": 14,
+      "accuracy": 0.3,
+      "precision": 0.3,
+      "recall": 0.3,
+      "f1_score": 0.3
+    },
+    {
+      "class_id": 23,
+      "class_name": "night_stand",
+      "support": 86,
+      "correct": 24,
+      "incorrect": 62,
+      "accuracy": 0.27906976744186046,
+      "precision": 0.5454545454545454,
+      "recall": 0.27906976744186046,
+      "f1_score": 0.36923076923076914
+    },
+    {
+      "class_id": 12,
+      "class_name": "desk",
+      "support": 86,
+      "correct": 20,
+      "incorrect": 66,
+      "accuracy": 0.23255813953488372,
+      "precision": 0.4166666666666667,
+      "recall": 0.23255813953488372,
+      "f1_score": 0.29850746268656714
+    },
+    {
+      "class_id": 1,
+      "class_name": "bathtub",
+      "support": 50,
+      "correct": 10,
+      "incorrect": 40,
+      "accuracy": 0.2,
+      "precision": 0.45454545454545453,
+      "recall": 0.2,
+      "f1_score": 0.2777777777777778
+    },
+    {
+      "class_id": 17,
+      "class_name": "guitar",
+      "support": 100,
+      "correct": 13,
+      "incorrect": 87,
+      "accuracy": 0.13,
+      "precision": 0.6190476190476191,
+      "recall": 0.13,
+      "f1_score": 0.21487603305785125
+    }
+  ],
+  "misclassified_samples_analyzed": [
+    {
+      "index": 22,
+      "true_class": "airplane",
+      "predicted_class": "bed",
+      "confidence": 0.29507961869239807
+    },
+    {
+      "index": 100,
+      "true_class": "bathtub",
+      "predicted_class": "toilet",
+      "confidence": 0.820616602897644
+    },
+    {
+      "index": 151,
+      "true_class": "bed",
+      "predicted_class": "guitar",
+      "confidence": 0.26246383786201477
+    },
+    {
+      "index": 250,
+      "true_class": "bench",
+      "predicted_class": "table",
+      "confidence": 0.3779558539390564
+    },
+    {
+      "index": 270,
+      "true_class": "bookshelf",
+      "predicted_class": "xbox",
+      "confidence": 0.20683340728282928
+    },
+    {
+      "index": 370,
+      "true_class": "car",
+      "predicted_class": "toilet",
+      "confidence": 0.4048614203929901
+    },
+    {
+      "index": 474,
+      "true_class": "chair",
+      "predicted_class": "airplane",
+      "confidence": 0.19869215786457062
+    },
+    {
+      "index": 573,
+      "true_class": "curtain",
+      "predicted_class": "airplane",
+      "confidence": 0.1710370033979416
+    }
+  ],
+  "per_class_metrics": [
+    {
+      "class_id": 0,
+      "class_name": "airplane",
+      "support": 100,
+      "correct": 92,
+      "incorrect": 8,
+      "accuracy": 0.92,
+      "precision": 0.33093525179856115,
+      "recall": 0.92,
+      "f1_score": 0.4867724867724868
+    },
+    {
+      "class_id": 1,
+      "class_name": "bathtub",
+      "support": 50,
+      "correct": 10,
+      "incorrect": 40,
+      "accuracy": 0.2,
+      "precision": 0.45454545454545453,
+      "recall": 0.2,
+      "f1_score": 0.2777777777777778
+    },
+    {
+      "class_id": 2,
+      "class_name": "bed",
+      "support": 100,
+      "correct": 70,
+      "incorrect": 30,
+      "accuracy": 0.7,
+      "precision": 0.5785123966942148,
+      "recall": 0.7,
+      "f1_score": 0.6334841628959275
+    },
+    {
+      "class_id": 3,
+      "class_name": "bench",
+      "support": 20,
+      "correct": 7,
+      "incorrect": 13,
+      "accuracy": 0.35,
+      "precision": 0.3333333333333333,
+      "recall": 0.35,
+      "f1_score": 0.3414634146341463
+    },
+    {
+      "class_id": 4,
+      "class_name": "bookshelf",
+      "support": 100,
+      "correct": 76,
+      "incorrect": 24,
+      "accuracy": 0.76,
+      "precision": 0.6386554621848739,
+      "recall": 0.76,
+      "f1_score": 0.6940639269406392
+    },
+    {
+      "class_id": 7,
+      "class_name": "car",
+      "support": 100,
+      "correct": 31,
+      "incorrect": 69,
+      "accuracy": 0.31,
+      "precision": 0.8857142857142857,
+      "recall": 0.31,
+      "f1_score": 0.45925925925925926
+    },
+    {
+      "class_id": 8,
+      "class_name": "chair",
+      "support": 100,
+      "correct": 69,
+      "incorrect": 31,
+      "accuracy": 0.69,
+      "precision": 0.45695364238410596,
+      "recall": 0.69,
+      "f1_score": 0.5498007968127491
+    },
+    {
+      "class_id": 11,
+      "class_name": "curtain",
+      "support": 20,
+      "correct": 16,
+      "incorrect": 4,
+      "accuracy": 0.8,
+      "precision": 0.5333333333333333,
+      "recall": 0.8,
+      "f1_score": 0.64
+    },
+    {
+      "class_id": 12,
+      "class_name": "desk",
+      "support": 86,
+      "correct": 20,
+      "incorrect": 66,
+      "accuracy": 0.23255813953488372,
+      "precision": 0.4166666666666667,
+      "recall": 0.23255813953488372,
+      "f1_score": 0.29850746268656714
+    },
+    {
+      "class_id": 13,
+      "class_name": "door",
+      "support": 20,
+      "correct": 16,
+      "incorrect": 4,
+      "accuracy": 0.8,
+      "precision": 0.7619047619047619,
+      "recall": 0.8,
+      "f1_score": 0.7804878048780488
+    },
+    {
+      "class_id": 14,
+      "class_name": "dresser",
+      "support": 86,
+      "correct": 61,
+      "incorrect": 25,
+      "accuracy": 0.7093023255813954,
+      "precision": 0.4326241134751773,
+      "recall": 0.7093023255813954,
+      "f1_score": 0.5374449339207049
+    },
+    {
+      "class_id": 17,
+      "class_name": "guitar",
+      "support": 100,
+      "correct": 13,
+      "incorrect": 87,
+      "accuracy": 0.13,
+      "precision": 0.6190476190476191,
+      "recall": 0.13,
+      "f1_score": 0.21487603305785125
+    },
+    {
+      "class_id": 20,
+      "class_name": "laptop",
+      "support": 20,
+      "correct": 17,
+      "incorrect": 3,
+      "accuracy": 0.85,
+      "precision": 0.5862068965517241,
+      "recall": 0.85,
+      "f1_score": 0.6938775510204082
+    },
+    {
+      "class_id": 21,
+      "class_name": "mantel",
+      "support": 100,
+      "correct": 73,
+      "incorrect": 27,
+      "accuracy": 0.73,
+      "precision": 0.5748031496062992,
+      "recall": 0.73,
+      "f1_score": 0.6431718061674009
+    },
+    {
+      "class_id": 22,
+      "class_name": "monitor",
+      "support": 100,
+      "correct": 85,
+      "incorrect": 15,
+      "accuracy": 0.85,
+      "precision": 0.8173076923076923,
+      "recall": 0.85,
+      "f1_score": 0.8333333333333334
+    },
+    {
+      "class_id": 23,
+      "class_name": "night_stand",
+      "support": 86,
+      "correct": 24,
+      "incorrect": 62,
+      "accuracy": 0.27906976744186046,
+      "precision": 0.5454545454545454,
+      "recall": 0.27906976744186046,
+      "f1_score": 0.36923076923076914
+    },
+    {
+      "class_id": 24,
+      "class_name": "person",
+      "support": 20,
+      "correct": 8,
+      "incorrect": 12,
+      "accuracy": 0.4,
+      "precision": 0.5,
+      "recall": 0.4,
+      "f1_score": 0.4444444444444445
+    },
+    {
+      "class_id": 25,
+      "class_name": "piano",
+      "support": 100,
+      "correct": 34,
+      "incorrect": 66,
+      "accuracy": 0.34,
+      "precision": 0.6938775510204082,
+      "recall": 0.34,
+      "f1_score": 0.45637583892617456
+    },
+    {
+      "class_id": 26,
+      "class_name": "plant",
+      "support": 100,
+      "correct": 41,
+      "incorrect": 59,
+      "accuracy": 0.41,
+      "precision": 0.82,
+      "recall": 0.41,
+      "f1_score": 0.5466666666666666
+    },
+    {
+      "class_id": 28,
+      "class_name": "range_hood",
+      "support": 100,
+      "correct": 64,
+      "incorrect": 36,
+      "accuracy": 0.64,
+      "precision": 0.927536231884058,
+      "recall": 0.64,
+      "f1_score": 0.757396449704142
+    },
+    {
+      "class_id": 30,
+      "class_name": "sofa",
+      "support": 100,
+      "correct": 47,
+      "incorrect": 53,
+      "accuracy": 0.47,
+      "precision": 0.618421052631579,
+      "recall": 0.47,
+      "f1_score": 0.5340909090909091
+    },
+    {
+      "class_id": 31,
+      "class_name": "stairs",
+      "support": 20,
+      "correct": 6,
+      "incorrect": 14,
+      "accuracy": 0.3,
+      "precision": 0.3,
+      "recall": 0.3,
+      "f1_score": 0.3
+    },
+    {
+      "class_id": 32,
+      "class_name": "stool",
+      "support": 20,
+      "correct": 9,
+      "incorrect": 11,
+      "accuracy": 0.45,
+      "precision": 0.36,
+      "recall": 0.45,
+      "f1_score": 0.39999999999999997
+    },
+    {
+      "class_id": 33,
+      "class_name": "table",
+      "support": 100,
+      "correct": 71,
+      "incorrect": 29,
+      "accuracy": 0.71,
+      "precision": 0.4863013698630137,
+      "recall": 0.71,
+      "f1_score": 0.5772357723577236
+    },
+    {
+      "class_id": 34,
+      "class_name": "tent",
+      "support": 20,
+      "correct": 9,
+      "incorrect": 11,
+      "accuracy": 0.45,
+      "precision": 0.47368421052631576,
+      "recall": 0.45,
+      "f1_score": 0.46153846153846156
+    },
+    {
+      "class_id": 35,
+      "class_name": "toilet",
+      "support": 100,
+      "correct": 56,
+      "incorrect": 44,
+      "accuracy": 0.56,
+      "precision": 0.6222222222222222,
+      "recall": 0.56,
+      "f1_score": 0.5894736842105264
+    },
+    {
+      "class_id": 36,
+      "class_name": "tv_stand",
+      "support": 100,
+      "correct": 53,
+      "incorrect": 47,
+      "accuracy": 0.53,
+      "precision": 0.5353535353535354,
+      "recall": 0.53,
+      "f1_score": 0.5326633165829145
+    },
+    {
+      "class_id": 37,
+      "class_name": "vase",
+      "support": 100,
+      "correct": 78,
+      "incorrect": 22,
+      "accuracy": 0.78,
+      "precision": 0.7878787878787878,
+      "recall": 0.78,
+      "f1_score": 0.7839195979899497
+    },
+    {
+      "class_id": 38,
+      "class_name": "wardrobe",
+      "support": 20,
+      "correct": 12,
+      "incorrect": 8,
+      "accuracy": 0.6,
+      "precision": 0.6666666666666666,
+      "recall": 0.6,
+      "f1_score": 0.631578947368421
+    },
+    {
+      "class_id": 39,
+      "class_name": "xbox",
+      "support": 20,
+      "correct": 10,
+      "incorrect": 10,
+      "accuracy": 0.5,
+      "precision": 0.5,
+      "recall": 0.5,
+      "f1_score": 0.5
+    }
+  ]
+}

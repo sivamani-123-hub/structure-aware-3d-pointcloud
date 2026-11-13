@@ -1,0 +1,387 @@
+{
+  "summary": {
+    "canonical_classes": 40,
+    "present_classes": 30,
+    "missing_classes": 10,
+    "total_train_samples": 8377,
+    "total_test_samples": 2108,
+    "total_samples": 10485,
+    "imbalance_ratio": 9.242990654205608,
+    "train_test_correlation": 0.6126438984124409,
+    "train_test_cosine_similarity": 0.8834175618504725
+  },
+  "all_classes_table": [
+    {
+      "class": "chair",
+      "is_extracted": true,
+      "train": 889,
+      "test": 100,
+      "total": 989,
+      "train_pct": 89.88877654196158,
+      "test_pct": 10.111223458038424
+    },
+    {
+      "class": "sofa",
+      "is_extracted": true,
+      "train": 680,
+      "test": 100,
+      "total": 780,
+      "train_pct": 87.17948717948718,
+      "test_pct": 12.820512820512818
+    },
+    {
+      "class": "airplane",
+      "is_extracted": true,
+      "train": 626,
+      "test": 100,
+      "total": 726,
+      "train_pct": 86.22589531680441,
+      "test_pct": 13.774104683195588
+    },
+    {
+      "class": "bookshelf",
+      "is_extracted": true,
+      "train": 572,
+      "test": 100,
+      "total": 672,
+      "train_pct": 85.11904761904762,
+      "test_pct": 14.88095238095238
+    },
+    {
+      "class": "bed",
+      "is_extracted": true,
+      "train": 515,
+      "test": 100,
+      "total": 615,
+      "train_pct": 83.73983739837398,
+      "test_pct": 16.26016260162602
+    },
+    {
+      "class": "vase",
+      "is_extracted": true,
+      "train": 475,
+      "test": 100,
+      "total": 575,
+      "train_pct": 82.6086956521739,
+      "test_pct": 17.391304347826093
+    },
+    {
+      "class": "monitor",
+      "is_extracted": true,
+      "train": 465,
+      "test": 100,
+      "total": 565,
+      "train_pct": 82.30088495575221,
+      "test_pct": 17.69911504424779
+    },
+    {
+      "class": "table",
+      "is_extracted": true,
+      "train": 392,
+      "test": 100,
+      "total": 492,
+      "train_pct": 79.67479674796748,
+      "test_pct": 20.325203252032523
+    },
+    {
+      "class": "toilet",
+      "is_extracted": true,
+      "train": 344,
+      "test": 100,
+      "total": 444,
+      "train_pct": 77.47747747747748,
+      "test_pct": 22.52252252252252
+    },
+    {
+      "class": "mantel",
+      "is_extracted": true,
+      "train": 284,
+      "test": 100,
+      "total": 384,
+      "train_pct": 73.95833333333334,
+      "test_pct": 26.041666666666657
+    },
+    {
+      "class": "tv_stand",
+      "is_extracted": true,
+      "train": 267,
+      "test": 100,
+      "total": 367,
+      "train_pct": 72.75204359673025,
+      "test_pct": 27.247956403269754
+    },
+    {
+      "class": "plant",
+      "is_extracted": true,
+      "train": 240,
+      "test": 100,
+      "total": 340,
+      "train_pct": 70.58823529411765,
+      "test_pct": 29.411764705882348
+    },
+    {
+      "class": "piano",
+      "is_extracted": true,
+      "train": 231,
+      "test": 100,
+      "total": 331,
+      "train_pct": 69.78851963746223,
+      "test_pct": 30.21148036253777
+    },
+    {
+      "class": "car",
+      "is_extracted": true,
+      "train": 197,
+      "test": 100,
+      "total": 297,
+      "train_pct": 66.32996632996633,
+      "test_pct": 33.670033670033675
+    },
+    {
+      "class": "desk",
+      "is_extracted": true,
+      "train": 200,
+      "test": 86,
+      "total": 286,
+      "train_pct": 69.93006993006993,
+      "test_pct": 30.069930069930066
+    },
+    {
+      "class": "dresser",
+      "is_extracted": true,
+      "train": 200,
+      "test": 86,
+      "total": 286,
+      "train_pct": 69.93006993006993,
+      "test_pct": 30.069930069930066
+    },
+    {
+      "class": "night_stand",
+      "is_extracted": true,
+      "train": 200,
+      "test": 86,
+      "total": 286,
+      "train_pct": 69.93006993006993,
+      "test_pct": 30.069930069930066
+    },
+    {
+      "class": "guitar",
+      "is_extracted": true,
+      "train": 155,
+      "test": 100,
+      "total": 255,
+      "train_pct": 60.78431372549019,
+      "test_pct": 39.21568627450981
+    },
+    {
+      "class": "range_hood",
+      "is_extracted": true,
+      "train": 115,
+      "test": 100,
+      "total": 215,
+      "train_pct": 53.48837209302325,
+      "test_pct": 46.51162790697675
+    },
+    {
+      "class": "bench",
+      "is_extracted": true,
+      "train": 173,
+      "test": 20,
+      "total": 193,
+      "train_pct": 89.63730569948186,
+      "test_pct": 10.362694300518143
+    },
+    {
+      "class": "tent",
+      "is_extracted": true,
+      "train": 163,
+      "test": 20,
+      "total": 183,
+      "train_pct": 89.07103825136612,
+      "test_pct": 10.928961748633881
+    },
+    {
+      "class": "laptop",
+      "is_extracted": true,
+      "train": 149,
+      "test": 20,
+      "total": 169,
+      "train_pct": 88.16568047337277,
+      "test_pct": 11.834319526627226
+    },
+    {
+      "class": "curtain",
+      "is_extracted": true,
+      "train": 138,
+      "test": 20,
+      "total": 158,
+      "train_pct": 87.34177215189874,
+      "test_pct": 12.658227848101262
+    },
+    {
+      "class": "bathtub",
+      "is_extracted": true,
+      "train": 106,
+      "test": 50,
+      "total": 156,
+      "train_pct": 67.94871794871796,
+      "test_pct": 32.051282051282044
+    },
+    {
+      "class": "stairs",
+      "is_extracted": true,
+      "train": 124,
+      "test": 20,
+      "total": 144,
+      "train_pct": 86.11111111111111,
+      "test_pct": 13.888888888888886
+    },
+    {
+      "class": "door",
+      "is_extracted": true,
+      "train": 109,
+      "test": 20,
+      "total": 129,
+      "train_pct": 84.49612403100775,
+      "test_pct": 15.503875968992247
+    },
+    {
+      "class": "xbox",
+      "is_extracted": true,
+      "train": 103,
+      "test": 20,
+      "total": 123,
+      "train_pct": 83.73983739837398,
+      "test_pct": 16.26016260162602
+    },
+    {
+      "class": "stool",
+      "is_extracted": true,
+      "train": 90,
+      "test": 20,
+      "total": 110,
+      "train_pct": 81.81818181818183,
+      "test_pct": 18.181818181818173
+    },
+    {
+      "class": "person",
+      "is_extracted": true,
+      "train": 88,
+      "test": 20,
+      "total": 108,
+      "train_pct": 81.48148148148148,
+      "test_pct": 18.51851851851852
+    },
+    {
+      "class": "wardrobe",
+      "is_extracted": true,
+      "train": 87,
+      "test": 20,
+      "total": 107,
+      "train_pct": 81.30841121495327,
+      "test_pct": 18.691588785046733
+    },
+    {
+      "class": "bottle",
+      "is_extracted": false,
+      "train": 0,
+      "test": 0,
+      "total": 0,
+      "train_pct": 0.0,
+      "test_pct": 0.0
+    },
+    {
+      "class": "bowl",
+      "is_extracted": false,
+      "train": 0,
+      "test": 0,
+      "total": 0,
+      "train_pct": 0.0,
+      "test_pct": 0.0
+    },
+    {
+      "class": "cone",
+      "is_extracted": false,
+      "train": 0,
+      "test": 0,
+      "total": 0,
+      "train_pct": 0.0,
+      "test_pct": 0.0
+    },
+    {
+      "class": "cup",
+      "is_extracted": false,
+      "train": 0,
+      "test": 0,
+      "total": 0,
+      "train_pct": 0.0,
+      "test_pct": 0.0
+    },
+    {
+      "class": "flower_pot",
+      "is_extracted": false,
+      "train": 0,
+      "test": 0,
+      "total": 0,
+      "train_pct": 0.0,
+      "test_pct": 0.0
+    },
+    {
+      "class": "glass_box",
+      "is_extracted": false,
+      "train": 0,
+      "test": 0,
+      "total": 0,
+      "train_pct": 0.0,
+      "test_pct": 0.0
+    },
+    {
+      "class": "keyboard",
+      "is_extracted": false,
+      "train": 0,
+      "test": 0,
+      "total": 0,
+      "train_pct": 0.0,
+      "test_pct": 0.0
+    },
+    {
+      "class": "lamp",
+      "is_extracted": false,
+      "train": 0,
+      "test": 0,
+      "total": 0,
+      "train_pct": 0.0,
+      "test_pct": 0.0
+    },
+    {
+      "class": "radio",
+      "is_extracted": false,
+      "train": 0,
+      "test": 0,
+      "total": 0,
+      "train_pct": 0.0,
+      "test_pct": 0.0
+    },
+    {
+      "class": "sink",
+      "is_extracted": false,
+      "train": 0,
+      "test": 0,
+      "total": 0,
+      "train_pct": 0.0,
+      "test_pct": 0.0
+    }
+  ],
+  "missing_class_names": [
+    "bottle",
+    "bowl",
+    "cone",
+    "cup",
+    "flower_pot",
+    "glass_box",
+    "keyboard",
+    "lamp",
+    "radio",
+    "sink"
+  ]
+}

@@ -1,0 +1,12 @@
+# Requirements for Structure-Aware Cross-Domain 3D Point Cloud Classification (Phase 7 MVP)
+torch>=2.5.0
+torchvision>=0.20.0
+numpy>=1.24.0
+scipy>=1.10.0
+h5py>=3.10.0
+streamlit>=1.30.0
+plotly>=5.18.0
+pandas>=2.0.0
+matplotlib>=3.7.0
+pyyaml>=6.0.0
+

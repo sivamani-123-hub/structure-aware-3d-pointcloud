@@ -1,0 +1,44 @@
+{
+  "512": {
+    "num_points": 512,
+    "best_val_accuracy": 64.27718040621266,
+    "best_val_epoch": 12,
+    "test_accuracy_oa": 62.99810246679317,
+    "macro_precision": 63.51704948388285,
+    "macro_recall_macc": 58.04573643410854,
+    "macro_f1": 56.73666979403404,
+    "weighted_f1": 61.71319654106128,
+    "training_time_min": 11.44,
+    "peak_vram_mb": 2683.2,
+    "parameters": 1809320,
+    "checkpoint_path": "c:\\DLproj\\checkpoints\\ablation_points\\dgcnn_n512_best.pth"
+  },
+  "1024": {
+    "num_points": 1024,
+    "best_val_accuracy": 48.50657108721625,
+    "best_val_epoch": 3,
+    "test_accuracy_oa": 44.49715370018975,
+    "macro_precision": 40.24955902807322,
+    "macro_recall_macc": 37.53255813953488,
+    "macro_f1": 34.948448629219406,
+    "weighted_f1": 41.296792272207696,
+    "training_time_min": 30.45,
+    "peak_vram_mb": 5328.8,
+    "parameters": 1809320,
+    "checkpoint_path": "c:\\DLproj\\checkpoints\\ablation_points\\dgcnn_n1024_best.pth"
+  },
+  "2048": {
+    "num_points": 2048,
+    "best_val_accuracy": 63.91875746714456,
+    "best_val_epoch": 12,
+    "test_accuracy_oa": 58.11195445920304,
+    "macro_precision": 60.24298253715729,
+    "macro_recall_macc": 53.34961240310078,
+    "macro_f1": 52.09162995828493,
+    "weighted_f1": 56.561489547369135,
+    "training_time_min": 171.6009936928749,
+    "peak_vram_mb": 3541.162109375,
+    "parameters": 1809320,
+    "checkpoint_path": "c:\\DLproj\\checkpoints\\ablation_points\\dgcnn_n2048_best.pth"
+  }
+}

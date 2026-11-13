@@ -1,0 +1,368 @@
+{
+  "overall_accuracy": 0.6219165085388995,
+  "mean_class_accuracy": 0.5797829457364342,
+  "total_test_samples": 2108,
+  "best_epoch_loaded": 13,
+  "per_class_stats": {
+    "airplane": {
+      "class_id": 0,
+      "support": 100,
+      "correct": 89,
+      "accuracy": 0.89,
+      "precision": 0.4405940594059406,
+      "recall": 0.89,
+      "f1_score": 0.5894039735099338
+    },
+    "bathtub": {
+      "class_id": 1,
+      "support": 50,
+      "correct": 8,
+      "accuracy": 0.16,
+      "precision": 0.8,
+      "recall": 0.16,
+      "f1_score": 0.26666666666666666
+    },
+    "bed": {
+      "class_id": 2,
+      "support": 100,
+      "correct": 68,
+      "accuracy": 0.68,
+      "precision": 0.6666666666666666,
+      "recall": 0.68,
+      "f1_score": 0.6732673267326733
+    },
+    "bench": {
+      "class_id": 3,
+      "support": 20,
+      "correct": 3,
+      "accuracy": 0.15,
+      "precision": 0.3,
+      "recall": 0.15,
+      "f1_score": 0.2
+    },
+    "bookshelf": {
+      "class_id": 4,
+      "support": 100,
+      "correct": 82,
+      "accuracy": 0.82,
+      "precision": 0.5616438356164384,
+      "recall": 0.82,
+      "f1_score": 0.6666666666666667
+    },
+    "bottle": {
+      "class_id": 5,
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0
+    },
+    "bowl": {
+      "class_id": 6,
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0
+    },
+    "car": {
+      "class_id": 7,
+      "support": 100,
+      "correct": 38,
+      "accuracy": 0.38,
+      "precision": 0.8636363636363636,
+      "recall": 0.38,
+      "f1_score": 0.5277777777777778
+    },
+    "chair": {
+      "class_id": 8,
+      "support": 100,
+      "correct": 72,
+      "accuracy": 0.72,
+      "precision": 0.47058823529411764,
+      "recall": 0.72,
+      "f1_score": 0.5691699604743083
+    },
+    "cone": {
+      "class_id": 9,
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0
+    },
+    "cup": {
+      "class_id": 10,
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0
+    },
+    "curtain": {
+      "class_id": 11,
+      "support": 20,
+      "correct": 16,
+      "accuracy": 0.8,
+      "precision": 0.47058823529411764,
+      "recall": 0.8,
+      "f1_score": 0.5925925925925927
+    },
+    "desk": {
+      "class_id": 12,
+      "support": 86,
+      "correct": 33,
+      "accuracy": 0.38372093023255816,
+      "precision": 0.5409836065573771,
+      "recall": 0.38372093023255816,
+      "f1_score": 0.44897959183673475
+    },
+    "door": {
+      "class_id": 13,
+      "support": 20,
+      "correct": 13,
+      "accuracy": 0.65,
+      "precision": 0.8125,
+      "recall": 0.65,
+      "f1_score": 0.7222222222222223
+    },
+    "dresser": {
+      "class_id": 14,
+      "support": 86,
+      "correct": 42,
+      "accuracy": 0.4883720930232558,
+      "precision": 0.4772727272727273,
+      "recall": 0.4883720930232558,
+      "f1_score": 0.4827586206896552
+    },
+    "flower_pot": {
+      "class_id": 15,
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0
+    },
+    "glass_box": {
+      "class_id": 16,
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0
+    },
+    "guitar": {
+      "class_id": 17,
+      "support": 100,
+      "correct": 48,
+      "accuracy": 0.48,
+      "precision": 0.7164179104477612,
+      "recall": 0.48,
+      "f1_score": 0.5748502994011977
+    },
+    "keyboard": {
+      "class_id": 18,
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0
+    },
+    "lamp": {
+      "class_id": 19,
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0
+    },
+    "laptop": {
+      "class_id": 20,
+      "support": 20,
+      "correct": 15,
+      "accuracy": 0.75,
+      "precision": 0.6818181818181818,
+      "recall": 0.75,
+      "f1_score": 0.7142857142857143
+    },
+    "mantel": {
+      "class_id": 21,
+      "support": 100,
+      "correct": 78,
+      "accuracy": 0.78,
+      "precision": 0.7090909090909091,
+      "recall": 0.78,
+      "f1_score": 0.7428571428571428
+    },
+    "monitor": {
+      "class_id": 22,
+      "support": 100,
+      "correct": 80,
+      "accuracy": 0.8,
+      "precision": 0.8333333333333334,
+      "recall": 0.8,
+      "f1_score": 0.816326530612245
+    },
+    "night_stand": {
+      "class_id": 23,
+      "support": 86,
+      "correct": 50,
+      "accuracy": 0.5813953488372093,
+      "precision": 0.6410256410256411,
+      "recall": 0.5813953488372093,
+      "f1_score": 0.6097560975609757
+    },
+    "person": {
+      "class_id": 24,
+      "support": 20,
+      "correct": 12,
+      "accuracy": 0.6,
+      "precision": 0.6,
+      "recall": 0.6,
+      "f1_score": 0.6
+    },
+    "piano": {
+      "class_id": 25,
+      "support": 100,
+      "correct": 41,
+      "accuracy": 0.41,
+      "precision": 0.803921568627451,
+      "recall": 0.41,
+      "f1_score": 0.543046357615894
+    },
+    "plant": {
+      "class_id": 26,
+      "support": 100,
+      "correct": 44,
+      "accuracy": 0.44,
+      "precision": 0.8627450980392157,
+      "recall": 0.44,
+      "f1_score": 0.5827814569536425
+    },
+    "radio": {
+      "class_id": 27,
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0
+    },
+    "range_hood": {
+      "class_id": 28,
+      "support": 100,
+      "correct": 84,
+      "accuracy": 0.84,
+      "precision": 0.9130434782608695,
+      "recall": 0.84,
+      "f1_score": 0.8749999999999999
+    },
+    "sink": {
+      "class_id": 29,
+      "support": 0,
+      "correct": 0,
+      "accuracy": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "f1_score": 0.0
+    },
+    "sofa": {
+      "class_id": 30,
+      "support": 100,
+      "correct": 70,
+      "accuracy": 0.7,
+      "precision": 0.5072463768115942,
+      "recall": 0.7,
+      "f1_score": 0.5882352941176471
+    },
+    "stairs": {
+      "class_id": 31,
+      "support": 20,
+      "correct": 10,
+      "accuracy": 0.5,
+      "precision": 0.7142857142857143,
+      "recall": 0.5,
+      "f1_score": 0.588235294117647
+    },
+    "stool": {
+      "class_id": 32,
+      "support": 20,
+      "correct": 3,
+      "accuracy": 0.15,
+      "precision": 0.75,
+      "recall": 0.15,
+      "f1_score": 0.24999999999999997
+    },
+    "table": {
+      "class_id": 33,
+      "support": 100,
+      "correct": 71,
+      "accuracy": 0.71,
+      "precision": 0.568,
+      "recall": 0.71,
+      "f1_score": 0.631111111111111
+    },
+    "tent": {
+      "class_id": 34,
+      "support": 20,
+      "correct": 15,
+      "accuracy": 0.75,
+      "precision": 0.30612244897959184,
+      "recall": 0.75,
+      "f1_score": 0.43478260869565216
+    },
+    "toilet": {
+      "class_id": 35,
+      "support": 100,
+      "correct": 71,
+      "accuracy": 0.71,
+      "precision": 0.7802197802197802,
+      "recall": 0.71,
+      "f1_score": 0.743455497382199
+    },
+    "tv_stand": {
+      "class_id": 36,
+      "support": 100,
+      "correct": 59,
+      "accuracy": 0.59,
+      "precision": 0.6276595744680851,
+      "recall": 0.59,
+      "f1_score": 0.6082474226804124
+    },
+    "vase": {
+      "class_id": 37,
+      "support": 100,
+      "correct": 83,
+      "accuracy": 0.83,
+      "precision": 0.7217391304347827,
+      "recall": 0.83,
+      "f1_score": 0.772093023255814
+    },
+    "wardrobe": {
+      "class_id": 38,
+      "support": 20,
+      "correct": 11,
+      "accuracy": 0.55,
+      "precision": 0.6111111111111112,
+      "recall": 0.55,
+      "f1_score": 0.5789473684210527
+    },
+    "xbox": {
+      "class_id": 39,
+      "support": 20,
+      "correct": 2,
+      "accuracy": 0.1,
+      "precision": 0.2857142857142857,
+      "recall": 0.1,
+      "f1_score": 0.14814814814814817
+    }
+  }
+}

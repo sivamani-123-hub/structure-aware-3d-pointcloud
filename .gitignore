@@ -1,0 +1,82 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+share/python-wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# Virtual Environments
+.venv/
+venv/
+ENV/
+env/
+env.bak/
+venv.bak/
+
+# Large Datasets (>8.6 GB) - Download via scripts/download_scanobjectnn.py
+dataset/
+datasets/
+data_cache/
+*.off
+*.bin
+*.h5
+*.tar.gz
+*.zip
+
+# Intermediate Ablation Checkpoints (Core best checkpoints are kept)
+checkpoints/ablation_*/*.pth
+checkpoints/ablation_*/*.pt
+
+# Temporary Scratch Files, Logs & Personal Dev Screenshots
+scratch/
+Screenshots/
+extracted_pdf_images/
+test_twocol.*
+*.log
+.coverage
+.coverage.*
+.cache
+.pytest_cache/
+
+# Environments & Secret Keys
+.env
+.env.*
+*.pem
+*.key
+*.token
+credentials.json
+
+# Operating System & Editor Files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+desktop.ini
+.vscode/
+.idea/
+*.swp
+*.swo

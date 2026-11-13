@@ -1,0 +1,54 @@
+{
+  "pointnet": {
+    "model_name": "pointnet",
+    "description": "PointNet Baseline (Shared pointwise MLPs + Global Max-Pooling)",
+    "total_parameters": 811048,
+    "checkpoint_val_acc": 0.6033452807646356,
+    "batch_latency_ms": 23.367600049823523,
+    "single_latency_ms": 5.982099974062294,
+    "output_logits_shape": [
+      8,
+      40
+    ],
+    "parameters_preserved": true
+  },
+  "dgcnn": {
+    "model_name": "dgcnn",
+    "description": "DGCNN Baseline (Dynamic EdgeConv, k=20, Dual Max/Avg Pooling)",
+    "total_parameters": 1809320,
+    "checkpoint_val_acc": 0.6571087216248507,
+    "batch_latency_ms": 748.1737000052817,
+    "single_latency_ms": 67.19740002881736,
+    "output_logits_shape": [
+      8,
+      40
+    ],
+    "parameters_preserved": true
+  },
+  "gnn": {
+    "model_name": "gnn",
+    "description": "Structure-Aware GNN (Multi-Scale EdgeConv with Dynamic Feature Graphs)",
+    "total_parameters": 1809320,
+    "checkpoint_val_acc": 0.6571087216248507,
+    "batch_latency_ms": 685.8907999703661,
+    "single_latency_ms": 62.43469996843487,
+    "output_logits_shape": [
+      8,
+      40
+    ],
+    "parameters_preserved": true
+  },
+  "peak_dgcnn": {
+    "model_name": "peak_dgcnn",
+    "description": "Peak Regularized GNN (k=40, Dropout 0.3, Weight Decay 1e-3, 74.62% ModelNet40 OA)",
+    "total_parameters": 1809320,
+    "checkpoint_val_acc": 0.7789725209080047,
+    "batch_latency_ms": 1445.7094999961555,
+    "single_latency_ms": 151.0627000243403,
+    "output_logits_shape": [
+      8,
+      40
+    ],
+    "parameters_preserved": true
+  }
+}
